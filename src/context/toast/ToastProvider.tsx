@@ -3,6 +3,10 @@ import type { ToastProps } from "@/components";
 import { toastContext } from "./toastContext";
 import type { ToastConfig, ToastProviderProps } from "./toastTypes";
 
+/**
+ * Provides toast notification functionality to the application.
+ * @component
+ */
 export const ToastProvider: FC<ToastProviderProps> = ({
   closeAfter: closeAfterProperty = 3000,
   children,
@@ -11,6 +15,10 @@ export const ToastProvider: FC<ToastProviderProps> = ({
   const activeTimeouts = useRef<{ id: string; timeout: NodeJS.Timeout }[]>([]);
   const [toasts, setToasts] = useState<ToastProps[]>([]);
 
+  /**
+   * Destroys a toast by id.
+   * @param id - The id of the toast to destroy.
+   */
   const destroy = (id: string) => {
     setToasts((previous) => previous.filter((toast) => toast.id !== id));
 
@@ -24,6 +32,11 @@ export const ToastProvider: FC<ToastProviderProps> = ({
       }
     );
   };
+
+  /**
+   * Creates a new toast notification.
+   * @param toastConfig - The configuration for the toast notification.
+   */
   const toast = ({ closeAfter, ...toastConfig }: ToastConfig) => {
     const shouldCloseAfter = closeAfter || closeAfterProperty;
     const id = `toast-${incrementalId.current++}`;

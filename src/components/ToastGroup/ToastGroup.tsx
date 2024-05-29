@@ -5,10 +5,15 @@ import { Toast } from "@/components";
 import classes from "./ToastGroup.module.css";
 import { createPortal } from "react-dom";
 
+/** Props for the ToastGroup component.*/
 interface ToastGroupProps {
+  /** Additional class name(s) to apply to the ToastGroup. */
   className?: string;
 }
-
+/**
+ * ToastGroup component to display a list of toast notifications.
+ * @component
+ */
 export const ToastGroup: FC<ToastGroupProps> = ({ className }) => {
   const { toasts } = useToast();
 
