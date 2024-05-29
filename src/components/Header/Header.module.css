@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--size-2);
+  padding: var(--size-4);
+  backdrop-filter: blur(var(--size-4));
+  position: sticky;
+  top: 0;
+  background-color: hsl(var(--color-dark-grey-hsl) / 0.04);
+}
+
+.logo,
+.logoWithText {
+  user-select: none;
+}
+
+.logoWithText {
+  height: var(--size-13);
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.logo {
+  height: var(--size-10);
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
