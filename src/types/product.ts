@@ -90,3 +90,18 @@ export interface Product {
   /** The thumbnail image of the product.*/
   thumbnail: string;
 }
+
+/** Interface representing the response structure for products data. */
+export interface ProductsResponse {
+  /** The list of products. */
+  products: Product[];
+
+  /** The total number of products available. */
+  total: number;
+
+  /** The number of items to skip in the current page. */
+  skip: number;
+
+  /** The maximum number of items to return per page. */
+  limit: number;
+}
