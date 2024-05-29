@@ -20,6 +20,8 @@
     0 2px 4px -1px hsl(var(--color-dark-grey-hsl) / 0.06);
   --shadow-base: 0 1px 3px 0 hsl(var(--color-dark-grey-hsl) / 0.1),
     0 1px 2px 0 hsl(var(--color-dark-grey-hsl) / 0.06);
+  --shadow-lg: 0 10px 15px -3px hsl(var(--color-dark-grey-hsl) / 0.1),
+    0 4px 6px -2px hsl(var(--color-dark-grey-hsl) / 0.05);
 
   --max-w-base: 37.5rem;
 
@@ -31,10 +33,13 @@
   --size-4: 1rem;
   --size-5: 1.25rem;
   --size-6: 1.5rem;
+  --size-14: 3.5rem;
+  --size-20: 5rem;
 
   --fs-sm: 0.875rem;
   --fs-base: 1rem;
   --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
 
   --timing-function-base: cubic-bezier(0.4, 0, 0.2, 1);
   --duration-base: 300ms;
