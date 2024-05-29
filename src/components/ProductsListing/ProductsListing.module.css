@@ -1,0 +1,10 @@
+.productsListing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--size-4);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 62rem;
+  margin-inline: auto;
+}
