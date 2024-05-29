@@ -10,6 +10,7 @@
   background-color: var(--color-primary);
   border: 1px solid var(--color-primary-light);
   color: var(--color-off-white);
+  line-height: 1.5;
 
   @media (max-width: 768px) {
     font-size: var(--fs-sm);
@@ -31,7 +32,6 @@
 .toastTitle {
   font-weight: 700;
   margin: 0;
-  line-height: 1.35;
 
   @media (min-width: 768px) {
     font-size: var(--fs-lg);
