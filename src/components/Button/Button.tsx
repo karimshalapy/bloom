@@ -31,17 +31,25 @@ export const ButtonVariant = {
 } as const;
 export type ButtonVariant = (typeof ButtonVariant)[keyof typeof ButtonVariant];
 
+/** Properties for a Button component. Extends the standard HTMLButtonElement attributes. */
 export interface ButtonProps
   extends DetailedHTMLProps<
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
+  /** Optional size of the button. Defaults to `base` if not set. */
   size?: ButtonSize;
+  /** Optional variant of the button. Defaults to `solid` if not set. */
   variant?: ButtonVariant;
+  /** Flag indicating if the button is in a loading state. */
   loading?: boolean;
+  /** Content to be placed before the button content. */
   slotPrefix?: ReactNode;
+  /** Content to be placed after the button content. */
   slotSuffix?: ReactNode;
+  /** Flag indicating if the button should be square shaped. */
   square?: boolean;
+  /** Flag indicating if the button content should be reversed. */
   reverse?: boolean;
 }
 
