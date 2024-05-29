@@ -25,7 +25,7 @@
     --btn-bg-color: var(--color-primary);
     --btn-fg-color: var(--color-off-white);
     --btn-border-size: 0;
-    --btn-border-color: var(--color-primary);
+    --btn-border-color: var(--color-transparent);
     --btn-shadow: var(--shadow-base);
   }
 
@@ -37,6 +37,22 @@
   &.solid:active:not(:disabled) {
     --btn-shadow: var(--shadow-base);
     --btn-bg-color: var(--color-primary-darker);
+  }
+
+  /* Reverse solid variant used when ghost is on a dark background */
+  &.solid.reverse {
+    --btn-fg-color: var(--color-primary);
+    --btn-bg-color: var(--color-off-white);
+  }
+
+  &.solid.reverse:hover:not(:disabled) {
+    --btn-fg-color: var(--color-primary-dark);
+    --btn-bg-color: hsl(var(--color-off-white-hsl) / 0.9);
+  }
+
+  &.solid.reverse:active:not(:disabled) {
+    --btn-fg-color: var(--color-primary-darker);
+    --btn-bg-color: hsl(var(--color-off-white-hsl) / 0.8);
   }
 
   /* --- Outlined Variant Styling --- */
@@ -58,6 +74,22 @@
     --btn-fg-color: var(--color-primary-dark);
   }
 
+  /* Reverse outlined variant used when ghost is on a dark background */
+  &.outlined.reverse {
+    --btn-fg-color: var(--color-off-white);
+    --btn-border-color: var(--color-off-white);
+  }
+
+  &.outlined.reverse:hover:not(:disabled) {
+    --btn-fg-color: hsl(var(--color-off-white-hsl) / 0.9);
+    --btn-border-color: hsl(var(--color-off-white-hsl) / 0.9);
+  }
+
+  &.outlined.reverse:active:not(:disabled) {
+    --btn-fg-color: hsl(var(--color-off-white-hsl) / 0.8);
+    --btn-border-color: hsl(var(--color-off-white-hsl) / 0.8);
+  }
+
   /* --- Ghost Variant Styling --- */
   &.ghost {
     --btn-bg-color: var(--color-transparent);
@@ -75,6 +107,19 @@
   &.ghost:active:not(:disabled) {
     --btn-shadow: var(--shadow-base);
     --btn-fg-color: var(--color-primary-darker);
+  }
+
+  /* Reverse ghost variant used when ghost is on a dark background */
+  &.ghost.reverse {
+    --btn-fg-color: var(--color-off-white);
+  }
+
+  &.ghost.reverse:hover:not(:disabled) {
+    --btn-fg-color: hsl(var(--color-off-white-hsl) / 0.9);
+  }
+
+  &.ghost.reverse:active:not(:disabled) {
+    --btn-fg-color: hsl(var(--color-off-white-hsl) / 0.8);
   }
 
   /* ----------------Sizes---------------- */

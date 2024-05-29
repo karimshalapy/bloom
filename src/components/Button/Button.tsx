@@ -42,6 +42,7 @@ export interface ButtonProps
   slotPrefix?: ReactNode;
   slotSuffix?: ReactNode;
   square?: boolean;
+  reverse?: boolean;
 }
 
 /**
@@ -60,6 +61,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       slotPrefix,
       slotSuffix,
       loading = false,
+      reverse = false,
       ...attributes
     } = props;
 
@@ -72,6 +74,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           classes[variant],
           classes[size],
           square && classes.square,
+          reverse && classes.reverse,
           className
         )}
         data-testid="button"
