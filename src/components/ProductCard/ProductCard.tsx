@@ -29,7 +29,7 @@ const stockLabel: Record<ProductStock, string> = {
  */
 export const ProductCard: FC<ProductCardProps> = ({
   as: Comp = "div",
-  headingLevel: Heading = "h3",
+  headingLevel: Heading = "h2",
   className,
   product,
   ...props
@@ -56,8 +56,12 @@ export const ProductCard: FC<ProductCardProps> = ({
         </Heading>
         <div className={classes.categoryPriceWrapper}>
           <p className={classes.categories}>
-            <span itemProp="category">{product.category}</span> |{" "}
-            <span itemProp="manufacturer">{product.brand}</span>
+            <span itemProp="category">{product.category}</span>{" "}
+            {product.brand && (
+              <>
+                | <span itemProp="manufacturer">{product.brand}</span>
+              </>
+            )}
           </p>
           <Price
             itemProp="offers"

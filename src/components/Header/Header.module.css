@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   background-color: hsl(var(--color-dark-grey-hsl) / 0.04);
+  z-index: 100;
 }
 
 .logo,
