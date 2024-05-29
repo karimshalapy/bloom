@@ -34,6 +34,7 @@
 
   --fs-sm: 0.875rem;
   --fs-base: 1rem;
+  --fs-lg: 1.125rem;
 
   --timing-function-base: cubic-bezier(0.4, 0, 0.2, 1);
   --duration-base: 300ms;
