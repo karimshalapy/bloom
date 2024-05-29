@@ -1,5 +1,12 @@
+import { ToastGroup } from "@/components";
+import { DefaultLayout } from "@/layouts";
+
 function App() {
-  return <h1>Shopping cart application</h1>;
+  return (
+    <DefaultLayout>
+      <ToastGroup />
+    </DefaultLayout>
+  );
 }
 
 export default App;
