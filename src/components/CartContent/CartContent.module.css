@@ -1,0 +1,24 @@
+.lineItemsListing {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > * + * {
+    margin-top: var(--size-6);
+  }
+}
+
+.totalsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: var(--fs-lg);
+  margin-top: var(--size-10);
+  gap: var(--size-1);
+
+  dd {
+    margin: 0;
+    font-weight: 700;
+    color: var(--color-primary);
+    justify-self: end;
+  }
+}

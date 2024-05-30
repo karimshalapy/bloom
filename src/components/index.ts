@@ -1,5 +1,6 @@
 export * from "./AddToCartButton/AddToCartButton";
 export * from "./Button/Button";
+export * from "./CartContent/CartContent";
 export * from "./CartLineItem/CartLineItem";
 export * from "./CartLineItemQuantityUpdater/CartLineItemQuantityUpdater";
 export * from "./Footer/Footer";
