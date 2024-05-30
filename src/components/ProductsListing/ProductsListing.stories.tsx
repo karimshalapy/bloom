@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { ProductsListing } from "./ProductsListing";
 import type { Product } from "@/types";
 
-const products: Product[] = Array.from({ length: 30 }, () => ({
+const products: Product[] = Array.from({ length: 18 }, () => ({
   id: 1,
   title: "Essence Mascara Lash Princess",
   description:
@@ -48,7 +48,7 @@ const products: Product[] = Array.from({ length: 30 }, () => ({
     },
   ],
   returnPolicy: "30 days return policy",
-  minimumOrderQuantity: 24,
+  minimumOrderQuantity: 1,
   meta: {
     createdAt: "2024-05-23T08:56:21.618Z",
     updatedAt: "2024-05-23T08:56:21.618Z",
@@ -74,9 +74,17 @@ export default {
   },
   args: {
     products,
+    pageSize: 18,
+    loading: false,
   },
 } satisfies Meta<typeof ProductsListing>;
 
 type Story = StoryObj<typeof ProductsListing>;
 
+/** A story to showcase the default behavior of the product listing */
 export const Default: Story = {};
+
+/** A story to showcase the loading behavior of the product listing */
+export const Loading: Story = {
+  args: { products: [], loading: true },
+};
