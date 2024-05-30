@@ -12,17 +12,23 @@ export const CartContent: FC = () => {
 
   return (
     <section>
-      <ul className={classes.lineItemsListing}>
-        {Object.values(cartLineItems).map((item) => (
-          <CartLineItem lineItem={item} key={item.product.id} />
-        ))}
-      </ul>
-      <dl className={classes.totalsWrapper}>
-        <dt>Total Price</dt>
-        <Price as="dd" value={total.price} />
-        <dt>Total Count</dt>
-        <dd>{total.count}</dd>
-      </dl>
+      {total.count ? (
+        <>
+          <ul className={classes.lineItemsListing}>
+            {Object.values(cartLineItems).map((item) => (
+              <CartLineItem lineItem={item} key={item.product.id} />
+            ))}
+          </ul>
+          <dl className={classes.totalsWrapper}>
+            <dt>Total Price</dt>
+            <Price as="dd" value={total.price} />
+            <dt>Total Count</dt>
+            <dd>{total.count}</dd>
+          </dl>
+        </>
+      ) : (
+        <p>There are no products added to the cart.</p>
+      )}
     </section>
   );
 };
