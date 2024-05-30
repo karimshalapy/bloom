@@ -1,4 +1,5 @@
 export * from "./Button/Button";
+export * from "./CartLineItemQuantityUpdater/CartLineItemQuantityUpdater";
 export * from "./Footer/Footer";
 export * from "./Header/Header";
 export * from "./Price/Price";

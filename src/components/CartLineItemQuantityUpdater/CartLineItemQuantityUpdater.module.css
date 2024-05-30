@@ -1,0 +1,21 @@
+.cartLineItemQuantityUpdater {
+  display: flex;
+  gap: var(--size-4);
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size, var(--fs-2xl));
+  min-width: 9.25rem;
+
+  > * {
+    flex-shrink: 0;
+  }
+
+  button {
+    font-size: inherit;
+  }
+}
+
+.compact {
+  --font-size: var(--fs-lg);
+  width: fit-content;
+}
