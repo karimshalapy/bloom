@@ -1,0 +1,51 @@
+.cartLineItem {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: var(--size-4);
+  align-items: flex-start;
+  padding: var(--size-3);
+  box-shadow: var(--shadow-base);
+  border-radius: var(--size-3);
+
+  *:first-child {
+    margin: 0;
+  }
+  &:hover {
+    background-position-x: 75%;
+  }
+}
+
+.productImage {
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  width: 100px;
+  object-fit: contain;
+}
+
+.description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.controlsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--size-2);
+  flex-wrap: wrap;
+
+  * {
+    flex-shrink: 0;
+  }
+}
+
+.disclaimer {
+  font-size: var(--fs-xs);
+}
+
+.price {
+  font-weight: 700;
+  color: var(--color-primary);
+}
