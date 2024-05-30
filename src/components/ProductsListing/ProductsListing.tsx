@@ -1,5 +1,6 @@
-import { FC } from "react";
+import { LoadingSkeleton } from "@/components";
 import type { Product } from "@/types";
+import { FC } from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import classes from "./ProductsListing.module.css";
 
@@ -7,6 +8,10 @@ import classes from "./ProductsListing.module.css";
 interface ProductsListingProps {
   /** The list of products to display.*/
   products: Product[];
+  /** A boolean indicating whether the products are loading or not */
+  loading?: boolean;
+  /** The amount of products to be rendered per page */
+  pageSize: number;
 }
 
 /**
@@ -15,9 +20,11 @@ interface ProductsListingProps {
  */
 export const ProductsListing: FC<ProductsListingProps> = ({
   products = [],
+  loading = false,
+  pageSize,
 }) => {
   return (
-    <ul className={classes.productsListing}>
+    <ul className={classes.productsListing} aria-busy={loading}>
       {products.map((product) => (
         <ProductCard
           className={classes.product}
@@ -26,6 +33,10 @@ export const ProductsListing: FC<ProductsListingProps> = ({
           product={product}
         />
       ))}
+      {loading &&
+        Array.from({ length: pageSize }, (_, i) => (
+          <LoadingSkeleton key={i} as="li" height={400} />
+        ))}
     </ul>
   );
 };

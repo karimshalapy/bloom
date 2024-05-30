@@ -7,4 +7,5 @@ export const productsContext = createContext<ProductsProviderValue>({
   loadMore: () => {},
   isLastPage: false,
   total: 0,
+  pageSize: 0,
 });

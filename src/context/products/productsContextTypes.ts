@@ -12,4 +12,6 @@ export interface ProductsProviderValue {
   isLastPage: boolean;
   /** The total number of products available.*/
   total: number;
+  /** The total number of products per page */
+  pageSize: number;
 }

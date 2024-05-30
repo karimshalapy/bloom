@@ -9,7 +9,7 @@ import { productsContext } from "./productsContext";
 import type { Product, ProductsResponse } from "@/types";
 import { useToast } from "../toast/useToast";
 
-const PAGE_SIZE = 20;
+const PAGE_SIZE = 18;
 
 /**
  * ProductsProvider component to manage and provide products data.
@@ -92,6 +92,7 @@ export const ProductsProvider: FC<PropsWithChildren> = ({ children }) => {
         products,
         loadMore,
         isLastPage,
+        pageSize: PAGE_SIZE,
         total: totalProductsCount,
       }}
     >
