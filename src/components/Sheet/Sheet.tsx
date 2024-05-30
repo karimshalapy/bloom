@@ -112,7 +112,7 @@ export const Sheet: FC<SheetProps> = ({
               ref={sheetRef}
               aria-labelledby={titleId}
               {...(description ? { "aria-describedby": descriptionId } : {})}
-              role="modal"
+              role="dialog"
             >
               <Heading id={titleId}>{title}</Heading>
               {description && <p id={descriptionId}>{description}</p>}
