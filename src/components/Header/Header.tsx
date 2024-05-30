@@ -1,9 +1,8 @@
-import { FC } from "react";
-import classes from "./Header.module.css";
 import LogoWithText from "@/assets/logo-with-text.svg";
 import Logo from "@/assets/logo.svg";
-import { Button, ButtonVariant } from "../Button/Button";
-import { ShoppingCart } from "@phosphor-icons/react";
+import { CartButton } from "@/components";
+import type { FC } from "react";
+import classes from "./Header.module.css";
 
 /**
  * Header component to display the main header of the application.
@@ -25,10 +24,7 @@ export const Header: FC = () => {
         alt="Bloom Logo"
         draggable={false}
       />
-      {/* TODO: add cart functionality */}
-      <Button variant={ButtonVariant.ghost} square>
-        <ShoppingCart role="img" aria-label="Shopping Cart" size={24} />
-      </Button>
+      <CartButton />
     </header>
   );
 };
