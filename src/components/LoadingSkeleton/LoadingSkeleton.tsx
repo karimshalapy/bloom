@@ -35,6 +35,7 @@ export const LoadingSkeleton: FC<LoadingSkeletonProps> = ({
       )}
       style={{ height, width }}
       aria-hidden
+      data-testid="loading-skeleton"
       {...props}
     >
       &nbsp;

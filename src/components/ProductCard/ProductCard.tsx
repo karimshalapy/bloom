@@ -31,6 +31,7 @@ export const ProductCard: FC<ProductCardProps> = ({
       className={clsx(classes.productCard, className)}
       itemScope
       itemType="https://schema.org/Product"
+      data-testid="product-card"
       {...props}
     >
       <img

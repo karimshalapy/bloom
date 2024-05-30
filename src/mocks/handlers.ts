@@ -5,7 +5,7 @@ export const handlers = [
     return HttpResponse.json({
       products: [
         {
-          id: 19,
+          id: Math.random(),
           title: "Chicken Meat",
           description:
             "Fresh and tender chicken meat, suitable for various culinary preparations.",
@@ -64,7 +64,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Chicken%20Meat/thumbnail.png",
         },
         {
-          id: 20,
+          id: Math.random(),
           title: "Cooking Oil",
           description:
             "Versatile cooking oil suitable for frying, sautéing, and various culinary applications.",
@@ -122,7 +122,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Cooking%20Oil/thumbnail.png",
         },
         {
-          id: 21,
+          id: Math.random(),
           title: "Cucumber",
           description:
             "Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.",
@@ -180,7 +180,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Cucumber/thumbnail.png",
         },
         {
-          id: 22,
+          id: Math.random(),
           title: "Dog Food",
           description:
             "Specially formulated dog food designed to provide essential nutrients for your canine companion.",
@@ -238,7 +238,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Dog%20Food/thumbnail.png",
         },
         {
-          id: 23,
+          id: Math.random(),
           title: "Eggs",
           description:
             "Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.",
@@ -296,7 +296,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Eggs/thumbnail.png",
         },
         {
-          id: 24,
+          id: Math.random(),
           title: "Fish Steak",
           description:
             "Quality fish steak, suitable for grilling, baking, or pan-searing.",
@@ -354,7 +354,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Fish%20Steak/thumbnail.png",
         },
         {
-          id: 25,
+          id: Math.random(),
           title: "Green Bell Pepper",
           description:
             "Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
@@ -412,7 +412,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/thumbnail.png",
         },
         {
-          id: 26,
+          id: Math.random(),
           title: "Green Chili Pepper",
           description:
             "Spicy green chili pepper, ideal for adding heat to your favorite recipes.",
@@ -470,7 +470,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Green%20Chili%20Pepper/thumbnail.png",
         },
         {
-          id: 27,
+          id: Math.random(),
           title: "Honey Jar",
           description:
             "Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.",
@@ -528,7 +528,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Honey%20Jar/thumbnail.png",
         },
         {
-          id: 28,
+          id: Math.random(),
           title: "Ice Cream",
           description:
             "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
@@ -589,7 +589,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/thumbnail.png",
         },
         {
-          id: 29,
+          id: Math.random(),
           title: "Juice",
           description:
             "Refreshing fruit juice, packed with vitamins and great for staying hydrated.",
@@ -647,7 +647,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Juice/thumbnail.png",
         },
         {
-          id: 30,
+          id: Math.random(),
           title: "Kiwi",
           description:
             "Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
@@ -705,7 +705,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Kiwi/thumbnail.png",
         },
         {
-          id: 31,
+          id: Math.random(),
           title: "Lemon",
           description:
             "Zesty and tangy lemons, versatile for cooking, baking, or making refreshing beverages.",
@@ -763,7 +763,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Lemon/thumbnail.png",
         },
         {
-          id: 32,
+          id: Math.random(),
           title: "Milk",
           description:
             "Fresh and nutritious milk, a staple for various recipes and daily consumption.",
@@ -821,7 +821,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Milk/thumbnail.png",
         },
         {
-          id: 33,
+          id: Math.random(),
           title: "Mulberry",
           description:
             "Sweet and juicy mulberries, perfect for snacking or adding to desserts and cereals.",
@@ -879,7 +879,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Mulberry/thumbnail.png",
         },
         {
-          id: 34,
+          id: Math.random(),
           title: "Nescafe Coffee",
           description:
             "Quality coffee from Nescafe, available in various blends for a rich and satisfying cup.",
@@ -937,7 +937,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Nescafe%20Coffee/thumbnail.png",
         },
         {
-          id: 35,
+          id: Math.random(),
           title: "Potatoes",
           description:
             "Versatile and starchy potatoes, great for roasting, mashing, or as a side dish.",
@@ -995,7 +995,7 @@ export const handlers = [
             "https://cdn.dummyjson.com/products/images/groceries/Potatoes/thumbnail.png",
         },
         {
-          id: 36,
+          id: Math.random(),
           title: "Protein Powder",
           description:
             "Nutrient-packed protein powder, ideal for supplementing your diet with essential proteins.",

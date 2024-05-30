@@ -45,6 +45,7 @@ function App() {
           disabled={loading}
           loading={loading}
           slotPrefix={<ArrowDown />}
+          data-testid="load-more"
         >
           Load More
         </Button>
