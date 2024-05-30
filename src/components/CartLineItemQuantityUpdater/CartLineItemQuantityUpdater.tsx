@@ -24,6 +24,8 @@ export const CartLineItemQuantityUpdater: FC<
 > = ({ product, compact = false, className, ...props }) => {
   const { cartLineItems, removeCartLineItem, addCartLineItem } = useCart();
 
+  const quantity = cartLineItems[product.id]?.quantity || 0;
+
   return (
     <div
       className={clsx(
@@ -36,12 +38,12 @@ export const CartLineItemQuantityUpdater: FC<
       <Button reverse square onClick={() => removeCartLineItem(product.id)}>
         <Minus role="img" aria-label="Decrease Amount" />
       </Button>
-      <span>{cartLineItems[product.id].quantity}</span>
+      <span>{quantity || 0}</span>
       <Button
         reverse
         square
         onClick={() => addCartLineItem(product)}
-        disabled={(product.stock || 0) < cartLineItems[product.id].quantity + 1}
+        disabled={(product.stock || 0) < quantity + 1}
       >
         <Plus role="img" aria-label="Add More" />
       </Button>

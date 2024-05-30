@@ -26,6 +26,7 @@ export const CartLineItem: FC<CartLineItemProps> = ({
   className,
   ...props
 }) => {
+  console.log(lineItem);
   return (
     <Comp className={clsx(classes.cartLineItem, className)} {...props}>
       <div>
