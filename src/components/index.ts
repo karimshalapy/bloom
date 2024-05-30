@@ -6,5 +6,6 @@ export * from "./Header/Header";
 export * from "./Price/Price";
 export * from "./ProductCard/ProductCard";
 export * from "./ProductsListing/ProductsListing";
+export * from "./Sheet/Sheet";
 export * from "./Toast/Toast";
 export * from "./ToastGroup/ToastGroup";

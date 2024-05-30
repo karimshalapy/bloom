@@ -1,0 +1,31 @@
+.sheetWrapper {
+  isolation: isolate;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: hsl(var(--color-dark-grey-hsl) / 0.4);
+  backdrop-filter: blur(var(--size-0_5));
+}
+
+.sheetContent {
+  position: absolute;
+  inset-block: 0;
+  right: 0;
+  width: 100%;
+  max-width: var(--max-w-base);
+  background-color: var(--color-off-white);
+  box-shadow: var(--shadow-lg);
+  padding: var(--size-4);
+  overflow: auto;
+}
+
+.closeBtn {
+  position: absolute;
+  top: var(--size-1);
+  right: var(--size-1);
+}

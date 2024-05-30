@@ -23,6 +23,7 @@
   --shadow-lg: 0 10px 15px -3px hsl(var(--color-dark-grey-hsl) / 0.1),
     0 4px 6px -2px hsl(var(--color-dark-grey-hsl) / 0.05);
 
+  --max-w-sm: 26rem;
   --max-w-base: 37.5rem;
   --max-w-lg: 62rem;
 
