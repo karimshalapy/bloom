@@ -1,0 +1,21 @@
+.loadingSkeleton {
+  display: block;
+  border-radius: var(--size-1_5);
+  background-color: hsl(var(--color-dark-grey-hsl) / 0.15);
+  cursor: progress;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.inline {
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

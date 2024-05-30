@@ -6,6 +6,7 @@ export * from "./CartLineItem/CartLineItem";
 export * from "./CartLineItemQuantityUpdater/CartLineItemQuantityUpdater";
 export * from "./Footer/Footer";
 export * from "./Header/Header";
+export * from "./LoadingSkeleton/LoadingSkeleton";
 export * from "./Price/Price";
 export * from "./ProductCard/ProductCard";
 export * from "./ProductsListing/ProductsListing";
