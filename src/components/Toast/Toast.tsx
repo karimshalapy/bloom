@@ -31,7 +31,7 @@ export function Toast({
   return (
     <div role="alert" className={classes.toast} data-testid="toast" id={id}>
       <div className={classes.toastContentWrapper}>
-        <Info className={classes.toastIcon} />
+        <Info role="presentation" className={classes.toastIcon} />
         <div className="mr-2 py-2">
           {title && <p className={classes.toastTitle}>{title}</p>}
           {content}
@@ -47,7 +47,7 @@ export function Toast({
             reverse
             onClick={destroy.bind(null, id)}
           >
-            <X />
+            <X role="img" aria-label="Close" />
           </Button>
         </div>
       )}

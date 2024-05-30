@@ -88,7 +88,15 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         data-testid="button"
         {...attributes}
       >
-        {loading ? <ArrowClockwise className={classes.loader} /> : slotPrefix}
+        {loading ? (
+          <ArrowClockwise
+            className={classes.loader}
+            role="img"
+            aria-label="Spinner"
+          />
+        ) : (
+          slotPrefix
+        )}
         {children}
         {slotSuffix}
       </button>

@@ -27,7 +27,7 @@ export const Header: FC = () => {
       />
       {/* TODO: add cart functionality */}
       <Button variant={ButtonVariant.ghost} square>
-        <ShoppingCart size={24} />
+        <ShoppingCart role="img" aria-label="Shopping Cart" size={24} />
       </Button>
     </header>
   );
