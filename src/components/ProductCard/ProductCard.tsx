@@ -1,8 +1,7 @@
-import { Button, Price } from "@/components";
-import { ShoppingCart } from "@phosphor-icons/react";
+import { AddToCartButton, Price } from "@/components";
+import { Product } from "@/types";
 import clsx from "clsx";
 import type { DetailedHTMLProps, ElementType, FC, HTMLAttributes } from "react";
-import { Product, ProductStock } from "@/types";
 import classes from "./ProductCard.module.css";
 
 /** Props for the ProductCard component.*/
@@ -15,13 +14,6 @@ interface ProductCardProps
   /** The product data to display.*/
   product: Product;
 }
-
-/** Labels for different product stock statuses.*/
-const stockLabel: Record<ProductStock, string> = {
-  [ProductStock.inStock]: "Add To Cart",
-  [ProductStock.outOfStock]: "Out Of Stock",
-  [ProductStock.lowStock]: "Low Stock Add Now",
-};
 
 /**
  * ProductCard component to display product information in a card format.
@@ -69,18 +61,7 @@ export const ProductCard: FC<ProductCardProps> = ({
             value={product.price}
           />
         </div>
-        {/* TODO: add cart functionality later */}
-        <Button
-          className={classes.addToCartBtn}
-          slotPrefix={<ShoppingCart className={classes.cartIcon} />}
-          reverse
-          disabled={
-            !product.availabilityStatus ||
-            product.availabilityStatus === ProductStock.outOfStock
-          }
-        >
-          {stockLabel[product.availabilityStatus || ProductStock.outOfStock]}
-        </Button>
+        <AddToCartButton product={product} />
       </div>
     </Comp>
   );

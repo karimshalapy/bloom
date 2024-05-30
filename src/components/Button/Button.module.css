@@ -172,7 +172,8 @@
   }
 
   /* ----------------General Pseudo Classes---------------- */
-  &:disabled {
+  &:disabled,
+  &.reverse:disabled {
     --btn-cursor: not-allowed;
     --btn-bg-color: hsl(var(--color-dark-grey-hsl) / 0.5);
     --btn-fg-color: white;
