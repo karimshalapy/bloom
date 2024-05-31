@@ -30,7 +30,7 @@ export const Footer: FC = () => {
           <li>
             <a
               href="https://main--66575276813412991c16a5b9.chromatic.com/"
-              title="Storybook Chromatic Library"
+              title="Storybook Library"
               rel="noreferrer"
               target="_blank"
             >
@@ -44,7 +44,7 @@ export const Footer: FC = () => {
           <li>
             <a
               href="https://www.chromatic.com/library?appId=66575276813412991c16a5b9&branch=main"
-              title="Storybook Chromatic Library"
+              title="Chromatic Library"
               rel="noreferrer"
               target="_blank"
             >
