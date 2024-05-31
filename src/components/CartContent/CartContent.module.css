@@ -22,3 +22,9 @@
     justify-self: end;
   }
 }
+
+.ctaContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--size-10);
+}

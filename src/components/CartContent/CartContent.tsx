@@ -1,14 +1,14 @@
 import type { FC } from "react";
 import classes from "./CartContent.module.css";
 import { useCart } from "@/context";
-import { CartLineItem, Price } from "@/components";
+import { Button, ButtonVariant, CartLineItem, Price } from "@/components";
 
 /**
  * Component for displaying the contents of the shopping cart.
  * @component
  */
 export const CartContent: FC = () => {
-  const { cartLineItems, total } = useCart();
+  const { cartLineItems, clearCart, total } = useCart();
 
   return (
     <section>
@@ -19,6 +19,11 @@ export const CartContent: FC = () => {
               <CartLineItem lineItem={item} key={item.product.id} />
             ))}
           </ul>
+          <div className={classes.ctaContainer}>
+            <Button variant={ButtonVariant.ghost} onClick={clearCart}>
+              Clear Cart
+            </Button>
+          </div>
           <dl className={classes.totalsWrapper}>
             <dt>Total Price</dt>
             <Price as="dd" value={total.price} />
