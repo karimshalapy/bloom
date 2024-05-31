@@ -11,6 +11,7 @@ This is a simple shopping cart application built using React, TypeScript, and Vi
 - [Extra Miles](#extra-miles)
 - [Enhancements To Consider](#enhancements-to-consider)
 - [Technologies Used](#technologies-used)
+- [Links](#links)
 - [Git Convention](#git-convention)
 
 ## Getting Started
@@ -108,6 +109,13 @@ This is a simple shopping cart application built using React, TypeScript, and Vi
 - [msw](https://mswjs.io/) - A mock service worker for testing.
 - [Metatags.io](https://metatags.io/) - A tool for generating meta tags for SEO.
 - [Favicon Generator](https://realfavicongenerator.net/) - A tool for generating favicons.
+
+## Links
+
+- Github Pages: <https://karimshalapy.github.io/bloom/>
+- Netlify: <https://tangent-bloom,netlify.app/>
+- Chromatic Library: <https://www.chromatic.com/library?appId=66575276813412991c16a5b9&branch=main>
+- Storybook Library: <https://main--66575276813412991c16a5b9.chromatic.com/>
 
 ## Git Convention
 
