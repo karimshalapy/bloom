@@ -1,10 +1,7 @@
-import { afterAll, afterEach, beforeAll, expect } from "vitest";
+import { afterAll, afterEach, beforeAll } from "vitest";
 import { cleanup } from "@testing-library/react";
-import * as matchers from "@testing-library/jest-dom/matchers";
 import { server } from "../mocks/node";
 import "@testing-library/jest-dom/vitest";
-
-expect.extend(matchers);
 
 // Start listening on to the mock service worker server
 beforeAll(() => server.listen({ onUnhandledRequest: "error" }));
