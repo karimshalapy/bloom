@@ -96,6 +96,7 @@ export const Sheet: FC<SheetProps> = ({
       <div
         className={triggerWrapperClassName}
         onClick={() => setOpen((prev) => !prev)}
+        data-testid="sheet-trigger-wrapper"
       >
         {trigger}
       </div>
@@ -106,6 +107,7 @@ export const Sheet: FC<SheetProps> = ({
               className={classes.overlay}
               onClick={setOpen.bind(null, false)}
               aria-hidden
+              data-testid="sheet-overlay"
             />
             <aside
               className={classes.sheetContent}
