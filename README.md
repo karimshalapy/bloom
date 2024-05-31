@@ -65,6 +65,7 @@ This is a simple shopping cart application built using React, TypeScript, and Vi
 - Adds the minimum order quantity to the cart if the quantity is less than the minimum order quantity.
 - Switches the add to cart button into increment and decrement if item is in cart already with live cart update.
 - Fetch products data from the dummy-json website.
+- A clear cart button that clears the cart from all the line items in it.
 
 ## Extra Miles
 
@@ -84,6 +85,8 @@ This is a simple shopping cart application built using React, TypeScript, and Vi
 - Save the user's cart in the storage to make it persistent.
 - Introduced a Toast component that displays notifications to the user, although it's only being used for errors in this application, so it might not appear in the final product, unless something is broken.
 - Introduced a Sheet component that is a dialog-like element and implemented a focus trap for it.
+- Show the minimum orderable amount on the cart line items if it's not 1.
+- Show the cart line items total count above the cart button in the header.
 
 ## Enhancements To Consider
 
